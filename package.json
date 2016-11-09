@@ -4,11 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --harmony"
+    "test": "mocha --harmony",
+    "tsc": "tsc --target es6",
+    "tsd": "tsd",
+    "build-test": "tsc dollar.ts && tsc test/money_test.ts && test"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "mocha": "^3.1.2"
+    "mocha": "^3.1.2",
+    "tsd": "^0.6.5",
+    "typescript": "^2.0.8"
   }
 }
